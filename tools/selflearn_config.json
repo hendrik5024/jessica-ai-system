@@ -1,0 +1,26 @@
+{
+  "models": {
+    "chat": {
+      "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "base_model_dir": "D:/Models/Mistral-7B-Instruct-v0.3",
+      "enabled": true
+    },
+    "code": {
+      "base_model": "codellama/CodeLlama-13b-Instruct-hf",
+      "base_model_dir": "D:/Models/CodeLlama-13b-Instruct-hf",
+      "enabled": false
+    }
+  },
+  "training": {
+    "min_examples": 200,
+    "batch_size": 8,
+    "epochs": 2,
+    "lr": 1e-4,
+    "lora_r": 16
+  },
+  "evaluation": {
+    "val_samples": 50,
+    "improvement_threshold": 0.0
+  }
+}
+

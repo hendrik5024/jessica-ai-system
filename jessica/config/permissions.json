@@ -1,0 +1,9 @@
+﻿{
+  "file_access": true,
+  "internet_access": true,
+  "code_execution": true,
+  "system_control": false,
+  "memory_write": true,
+  "learning_enabled": true,
+  "self_modify_code": false
+}

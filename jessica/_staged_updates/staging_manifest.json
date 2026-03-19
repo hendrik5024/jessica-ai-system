@@ -1,0 +1,87 @@
+{
+  "staged": {
+    "8bae0b085f41": {
+      "module": "greeting_skill",
+      "file": "jessica\\_staged_updates\\staging\\8bae0b085f41_greeting_skill.py",
+      "metadata_file": "jessica\\_staged_updates\\staging\\8bae0b085f41_greeting_skill_meta.json",
+      "staged_at": "2026-01-09T13:43:00.481251"
+    }
+  },
+  "testing": {
+    "d3b839e8066b": {
+      "module": "greeting_skill",
+      "file": "jessica\\_staged_updates\\testing\\d3b839e8066b_greeting_skill.py",
+      "moved_at": "2026-01-09T13:41:56.440554"
+    },
+    "3a7172e10b88": {
+      "module": "greeting_skill",
+      "file": "jessica\\_staged_updates\\testing\\3a7172e10b88_greeting_skill.py",
+      "moved_at": "2026-01-09T13:42:17.501923"
+    },
+    "0212e728c36b": {
+      "module": "greeting_skill",
+      "file": "jessica\\_staged_updates\\testing\\0212e728c36b_greeting_skill.py",
+      "moved_at": "2026-01-09T13:42:42.241758"
+    },
+    "d8b0d4b03177": {
+      "module": "greeting_skill",
+      "file": "jessica\\_staged_updates\\testing\\d8b0d4b03177_greeting_skill.py",
+      "moved_at": "2026-01-09T13:42:59.434298"
+    },
+    "4413aa6273d4": {
+      "module": "greeting_skill",
+      "file": "jessica\\_staged_updates\\testing\\4413aa6273d4_greeting_skill.py",
+      "moved_at": "2026-01-09T13:47:27.345812"
+    },
+    "243e54f59f09": {
+      "module": "greeting_skill",
+      "file": "jessica\\_staged_updates\\testing\\243e54f59f09_greeting_skill.py",
+      "moved_at": "2026-01-09T13:47:42.883651"
+    }
+  },
+  "deployed": [
+    {
+      "proposal_id": "proposal_001",
+      "module": "greeting_skill",
+      "file": "jessica\\_staged_updates\\deployed\\proposal_001_greeting_skill.py",
+      "promoted_at": "2026-01-09T13:36:28.011527"
+    },
+    {
+      "proposal_id": "a382fd8f41c1",
+      "module": "greeting_skill",
+      "file": "jessica\\_staged_updates\\deployed\\a382fd8f41c1_greeting_skill.py",
+      "promoted_at": "2026-01-09T13:36:28.130327"
+    },
+    {
+      "proposal_id": "573cdeb481e1",
+      "module": "greeting_skill",
+      "file": "jessica\\_staged_updates\\deployed\\573cdeb481e1_greeting_skill.py",
+      "promoted_at": "2026-01-09T13:47:28.429062"
+    },
+    {
+      "proposal_id": "8f24faef733a",
+      "module": "greeting_skill",
+      "file": "jessica\\_staged_updates\\deployed\\8f24faef733a_greeting_skill.py",
+      "promoted_at": "2026-01-09T13:47:43.981841"
+    },
+    {
+      "proposal_id": "e530cea59428",
+      "module": "greeting_skill",
+      "file": "jessica\\_staged_updates\\deployed\\e530cea59428_greeting_skill.py",
+      "promoted_at": "2026-01-09T13:47:44.569322"
+    },
+    {
+      "proposal_id": "5e41e45af8ac",
+      "module": "system_monitor",
+      "file": "jessica\\_staged_updates\\deployed\\5e41e45af8ac_system_monitor.py",
+      "promoted_at": "2026-01-09T13:47:44.825735"
+    },
+    {
+      "proposal_id": "e22df7b5bacb",
+      "module": "context_awareness",
+      "file": "jessica\\_staged_updates\\deployed\\e22df7b5bacb_context_awareness.py",
+      "promoted_at": "2026-01-09T13:47:45.088539"
+    }
+  ],
+  "rejected": []
+}

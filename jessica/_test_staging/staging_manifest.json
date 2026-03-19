@@ -1,0 +1,13 @@
+{
+  "staged": {},
+  "testing": {},
+  "deployed": [
+    {
+      "proposal_id": "test_proposal_1",
+      "module": "test_module",
+      "file": "jessica\\_test_staging\\deployed\\test_proposal_1_test_module.py",
+      "promoted_at": "2026-01-09T13:36:27.858076"
+    }
+  ],
+  "rejected": []
+}

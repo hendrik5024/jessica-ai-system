@@ -1,0 +1,56 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Test and coverage outputs
+.coverage
+htmlcov/
+
+# Editor/OS noise
+.vscode/
+*.tmp
+*.swp
+
+# Node/web artifacts
+node_modules/
+build/
+dist/
+
+# Local environment config
+.env
+
+# Runtime logs and outputs
+*.log
+logs/
+run_output*.txt
+demo_output*.txt
+demo_out*.txt
+autodidactic_report.txt
+
+# Runtime/local state
+.jessica_consent.json
+jessica_data.db
+jessica_robot_memory.db
+user_profile.db
+memory.json
+jessica_memory.json
+jessica_schedule.json
+jessica_world_state.json
+
+# Large local assets/builds
+models/
+jessica/models/
+llama.cpp/build/
+jessica_data_embeddings/
+
+# Backup/temporary files
+*.bak
+*.bak.bak
+
+# Generated publish bundle
+github-upload/

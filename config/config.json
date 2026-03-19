@@ -1,0 +1,13 @@
+{
+    "system": {
+        "name": "Jessica",
+        "version": "0.1",
+        "phase": "103"
+    },
+    "logging": {
+        "level": "INFO"
+    },
+    "execution": {
+        "allow_unknown_commands": false
+    }
+}

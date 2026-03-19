@@ -1,0 +1,10 @@
+{
+  "CREATE_PROJECT": {
+    "steps": [
+      "create_project_directory",
+      "generate_main_script",
+      "create_config_file"
+    ],
+    "success_count": 26
+  }
+}

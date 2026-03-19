@@ -1,0 +1,321 @@
+"""
+Logical Fallacies Store: Critical thinking, common fallacies, and Socratic questioning.
+"""
+import json
+import os
+
+DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
+LOGICAL_FALLACIES_FILE = os.path.join(DATA_DIR, "logical_fallacies.json")
+
+
+class LogicalFallaciesStore:
+    def __init__(self):
+        os.makedirs(DATA_DIR, exist_ok=True)
+        if os.path.exists(LOGICAL_FALLACIES_FILE):
+            with open(LOGICAL_FALLACIES_FILE, "r", encoding="utf-8") as f:
+                self.data = json.load(f)
+        else:
+            self.data = self._get_starter_knowledge()
+            self.save()
+
+    def _get_starter_knowledge(self):
+        return {
+            "big_three_fallacies": [
+                {
+                    "fallacy": "Ad Hominem",
+                    "latin": "To the person",
+                    "definition": "Attacking the person making the argument instead of the argument itself",
+                    "structure": "Person A makes claim X. Person B attacks A's character. Therefore, X is false.",
+                    "examples": [
+                        "You can't trust John's climate research—he drives an SUV! (His transportation choices don't invalidate his data)",
+                        "Of course you'd say we need higher taxes—you're a liberal! (Dismisses argument based on political label)",
+                        "Why should I listen to you about parenting? You don't even have kids! (Attacks credibility instead of addressing the advice)"
+                    ],
+                    "why_its_wrong": "A person's character, motives, or circumstances don't determine whether their argument is logically sound. Even a hypocrite can make a valid point.",
+                    "how_to_counter": "Focus on the argument itself: 'That may be true about the person, but let's examine the actual evidence they're presenting.'"
+                },
+                {
+                    "fallacy": "Straw Man",
+                    "definition": "Misrepresenting someone's argument to make it easier to attack",
+                    "structure": "Person A makes claim X. Person B distorts X into claim Y (which is weaker). Person B attacks Y. Therefore, X is false.",
+                    "examples": [
+                        "Person A: 'We should have stricter gun regulations.' Person B: 'So you want to ban all guns and leave us defenseless?' (A never said ban all guns)",
+                        "Person A: 'I think we need better work-life balance.' Person B: 'So you just want everyone to be lazy and not work hard?' (Distorts balance into laziness)",
+                        "Person A: 'We should reduce meat consumption for the environment.' Person B: 'Vegans want to force everyone to give up all animal products!' (Reduction ≠ elimination)"
+                    ],
+                    "why_its_wrong": "It's dishonest—you're arguing against a position the other person never held. You're not engaging with their actual point.",
+                    "how_to_counter": "Clarify your position: 'That's not what I said. Let me rephrase: I'm proposing X, not Y.'"
+                },
+                {
+                    "fallacy": "Sunk Cost Fallacy",
+                    "definition": "Continuing an endeavor because of past investment (time, money, effort), even when it's no longer rational",
+                    "structure": "I've already invested X, so I must continue, even though continuing is harmful.",
+                    "examples": [
+                        "I've spent 3 years in this major, so I can't switch now—even though I hate it and there are no jobs. (Past time doesn't change future prospects)",
+                        "We've already spent $50K on this business idea—we can't quit now! (But if it's failing, more money won't fix it)",
+                        "I've been in this relationship for 5 years, so I have to make it work. (Past years don't obligate you to future unhappiness)"
+                    ],
+                    "why_its_wrong": "Past costs are gone—they're 'sunk.' Future decisions should be based on future value, not past investment. Throwing good money/time after bad makes it worse.",
+                    "how_to_counter": "Ask: 'If I were starting fresh today, knowing what I know now, would I make this choice?' If no, consider cutting your losses.",
+                    "concorde_fallacy": "Named after the Concorde jet project—Britain and France kept funding it despite knowing it was unprofitable, just because they'd already spent so much."
+                }
+            ],
+            "other_common_fallacies": [
+                {
+                    "fallacy": "Appeal to Authority",
+                    "definition": "Claiming something is true because an authority figure says so, even if they're not an expert in this area",
+                    "example": "Dr. Phil (psychologist) says this diet works, so it must be true! (He's not a nutritionist or dietitian)",
+                    "caveat": "Expert consensus IS valid—but the expert must be qualified in that specific field"
+                },
+                {
+                    "fallacy": "False Dichotomy (Black-and-White Thinking)",
+                    "definition": "Presenting only two options when more exist",
+                    "example": "You're either with us or against us. (What about neutrality, partial agreement, or nuanced positions?)"
+                },
+                {
+                    "fallacy": "Slippery Slope",
+                    "definition": "Claiming that a small first step will inevitably lead to extreme consequences without evidence",
+                    "example": "If we allow kids to use phones in school, next they'll demand laptops, then TVs, then the school will be a circus! (Each step needs its own justification)"
+                },
+                {
+                    "fallacy": "Appeal to Emotion",
+                    "definition": "Manipulating emotions instead of using logic",
+                    "example": "Think of the children! How can you oppose this? (Emotional appeal without addressing the actual policy)"
+                },
+                {
+                    "fallacy": "Circular Reasoning (Begging the Question)",
+                    "definition": "The conclusion is assumed in the premise",
+                    "example": "The Bible is true because it says so in the Bible. (Assumes the Bible is true to prove the Bible is true)"
+                },
+                {
+                    "fallacy": "Hasty Generalization",
+                    "definition": "Drawing a broad conclusion from insufficient evidence",
+                    "example": "My friend got sick after eating sushi once, so all sushi is dangerous. (Sample size: 1)"
+                },
+                {
+                    "fallacy": "Post Hoc Ergo Propter Hoc",
+                    "latin": "After this, therefore because of this",
+                    "definition": "Assuming causation from correlation",
+                    "example": "I wore my lucky socks and we won the game, so the socks caused the win. (Correlation ≠ causation)"
+                },
+                {
+                    "fallacy": "Red Herring",
+                    "definition": "Introducing an irrelevant topic to distract from the original issue",
+                    "example": "Person A: 'You were late to work.' Person B: 'Well, you took a long lunch last week!' (Doesn't address being late today)"
+                }
+            ],
+            "socratic_questioning": {
+                "method": "Socratic Method",
+                "description": "Ask probing questions to expose assumptions and encourage critical thinking",
+                "question_types": [
+                    {
+                        "type": "Clarifying Questions",
+                        "purpose": "Ensure you understand the claim",
+                        "examples": [
+                            "What exactly do you mean by...?",
+                            "Can you give me an example?",
+                            "Could you rephrase that in simpler terms?"
+                        ]
+                    },
+                    {
+                        "type": "Assumption Questions",
+                        "purpose": "Uncover hidden assumptions",
+                        "examples": [
+                            "What are you assuming here?",
+                            "Why would you assume that?",
+                            "Is that always the case?"
+                        ]
+                    },
+                    {
+                        "type": "Evidence Questions",
+                        "purpose": "Check if the claim is supported",
+                        "examples": [
+                            "What evidence supports that?",
+                            "How do you know that's true?",
+                            "Can you cite a source?"
+                        ]
+                    },
+                    {
+                        "type": "Perspective Questions",
+                        "purpose": "Explore alternative viewpoints",
+                        "examples": [
+                            "What would someone who disagrees say?",
+                            "How would this look from another angle?",
+                            "Are there any counterexamples?"
+                        ]
+                    },
+                    {
+                        "type": "Implication Questions",
+                        "purpose": "Consider consequences",
+                        "examples": [
+                            "If that's true, what else must be true?",
+                            "What are the consequences of that belief?",
+                            "How does this affect...?"
+                        ]
+                    },
+                    {
+                        "type": "Meta Questions",
+                        "purpose": "Examine the question itself",
+                        "examples": [
+                            "Why is this question important?",
+                            "What are we really trying to figure out?",
+                            "Is this the right question to ask?"
+                        ]
+                    }
+                ]
+            },
+            "critical_thinking_checklist": [
+                "Is this claim based on evidence or assumption?",
+                "Who benefits from me believing this?",
+                "What would change my mind about this?",
+                "Am I experiencing confirmation bias (only seeking info that agrees with me)?",
+                "Have I considered alternative explanations?",
+                "Is the source credible and unbiased?",
+                "Am I being emotionally manipulated?",
+                "What would the strongest counter-argument be?"
+            ],
+            "cognitive_biases": [
+                {
+                    "bias": "Confirmation Bias",
+                    "description": "Seeking only information that confirms what you already believe",
+                    "antidote": "Actively seek opposing viewpoints. Ask: What would prove me wrong?"
+                },
+                {
+                    "bias": "Availability Heuristic",
+                    "description": "Overestimating likelihood of events we easily recall (often because they're dramatic/recent)",
+                    "example": "Thinking plane crashes are common because they're highly publicized (actually, driving is far more dangerous)",
+                    "antidote": "Look at actual statistics, not memorable anecdotes"
+                },
+                {
+                    "bias": "Anchoring Bias",
+                    "description": "Over-relying on the first piece of information received",
+                    "example": "First salary offer sets your expectation, even if it's too low",
+                    "antidote": "Gather multiple data points before deciding"
+                },
+                {
+                    "bias": "Dunning-Kruger Effect",
+                    "description": "People with low competence overestimate their ability; experts underestimate theirs",
+                    "antidote": "Stay humble, keep learning, seek feedback from experts"
+                }
+            ],
+            "tips": [
+                "When arguing, try to 'steel man' the opposing view—present the strongest version of their argument, not the weakest",
+                "If you catch yourself getting defensive, that's a sign your reasoning might be emotional, not logical",
+                "Practice intellectual humility: It's okay to say 'I don't know' or 'I changed my mind based on new evidence'",
+                "Before debating someone, agree on what evidence would change both your minds",
+                "The goal of argument is truth-seeking, not winning"
+            ]
+        }
+
+    def save(self):
+        with open(LOGICAL_FALLACIES_FILE, "w", encoding="utf-8") as f:
+            json.dump(self.data, f, indent=2, ensure_ascii=False)
+
+    def search(self, query):
+        """Search for relevant logical fallacy information."""
+        query_lower = query.lower()
+        results = []
+
+        # Big three fallacies
+        for fallacy in self.data.get("big_three_fallacies", []):
+            if fallacy["fallacy"].lower() in query_lower:
+                results.append({"type": "fallacy", "data": fallacy})
+
+        # Other fallacies
+        for fallacy in self.data.get("other_common_fallacies", []):
+            if fallacy["fallacy"].lower() in query_lower or any(word in query_lower for word in fallacy["fallacy"].lower().split()):
+                results.append({"type": "fallacy", "data": fallacy})
+
+        # General fallacy searches
+        if any(term in query_lower for term in ["fallacy", "logical error", "bad argument", "critique my thinking"]):
+            if not results:
+                results.extend([{"type": "fallacy", "data": f} for f in self.data.get("big_three_fallacies", [])])
+
+        # Socratic method
+        if any(term in query_lower for term in ["socratic", "question", "critical thinking", "challenge my thinking"]):
+            results.append({"type": "socratic", "data": self.data.get("socratic_questioning", {})})
+
+        # Cognitive biases
+        if "bias" in query_lower or "cognitive" in query_lower:
+            results.append({"type": "biases", "data": self.data.get("cognitive_biases", [])})
+
+        # Critical thinking checklist
+        if any(term in query_lower for term in ["checklist", "critical thinking", "evaluate"]):
+            results.append({"type": "checklist", "data": self.data.get("critical_thinking_checklist", [])})
+
+        return results[:5]
+
+    def format_response(self, results):
+        """Format logical fallacy information for display."""
+        if not results:
+            return "I don't have specific logical fallacy info on that yet."
+
+        output = []
+
+        for result in results:
+            if result["type"] == "fallacy":
+                fallacy = result["data"]
+                output.append(f"🧠 **{fallacy['fallacy']}**")
+                if "latin" in fallacy:
+                    output.append(f"*(Latin: {fallacy['latin']})*")
+                output.append(f"{fallacy['definition']}\n")
+
+                if "structure" in fallacy:
+                    output.append(f"**Structure:** {fallacy['structure']}\n")
+
+                if "examples" in fallacy:
+                    output.append("**Examples:**")
+                    for ex in fallacy["examples"]:
+                        output.append(f"  • {ex}")
+                    output.append("")
+                elif "example" in fallacy:
+                    output.append(f"**Example:** {fallacy['example']}\n")
+
+                if "why_its_wrong" in fallacy:
+                    output.append(f"**Why it's wrong:** {fallacy['why_its_wrong']}\n")
+
+                if "how_to_counter" in fallacy:
+                    output.append(f"**How to counter:** {fallacy['how_to_counter']}\n")
+
+                if "concorde_fallacy" in fallacy:
+                    output.append(f"💡 **Historical note:** {fallacy['concorde_fallacy']}\n")
+
+            elif result["type"] == "socratic":
+                socratic = result["data"]
+                output.append(f"🎓 **{socratic['method']}**")
+                output.append(f"{socratic['description']}\n")
+                output.append("**Question Types:**\n")
+                for qtype in socratic["question_types"]:
+                    output.append(f"**{qtype['type']}** - {qtype['purpose']}")
+                    for ex in qtype["examples"][:2]:
+                        output.append(f"  • \"{ex}\"")
+                    output.append("")
+
+            elif result["type"] == "biases":
+                output.append("🧩 **Cognitive Biases to Watch:**\n")
+                for bias in result["data"]:
+                    output.append(f"**{bias['bias']}:** {bias['description']}")
+                    if "example" in bias:
+                        output.append(f"  Example: {bias['example']}")
+                    output.append(f"  Antidote: {bias['antidote']}")
+                    output.append("")
+
+            elif result["type"] == "checklist":
+                output.append("✅ **Critical Thinking Checklist:**")
+                for item in result["data"]:
+                    output.append(f"  • {item}")
+                output.append("")
+
+        # Add tips if we have space
+        if len(results) <= 2:
+            output.append("💡 **Critical Thinking Tips:**")
+            for tip in self.data.get("tips", [])[:3]:
+                output.append(f"  • {tip}")
+
+        return "\n".join(output)
+
+
+if __name__ == "__main__":
+    store = LogicalFallaciesStore()
+    results = store.search("ad hominem")
+    print(store.format_response(results))

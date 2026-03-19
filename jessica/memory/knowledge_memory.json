@@ -1,0 +1,14 @@
+{
+  "fact:user:default:birth_year": {
+    "answer": "1975",
+    "confidence": 1.0,
+    "created_at": "2026-03-07T14:17:43.173654",
+    "question": "fact:user:default:birth_year"
+  },
+  "fact:user:default:birthplace": {
+    "answer": "December",
+    "confidence": 1.0,
+    "created_at": "2026-03-07T15:03:53.097947",
+    "question": "fact:user:default:birthplace"
+  }
+}

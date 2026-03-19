@@ -1,0 +1,100 @@
+"""
+Etiquette and Social Norms: Advice for handling social situations.
+"""
+import json
+from pathlib import Path
+from typing import Optional, List, Dict
+
+ETIQUETTE_FILE = Path(__file__).resolve().parent.parent / "data" / "etiquette.json"
+
+STARTER_ETIQUETTE = {
+    "declining_invitation": {
+        "situation": "Declining a wedding invitation",
+        "advice": "Respond as soon as possible, ideally within a week. Be gracious and brief: 'Thank you so much for thinking of us. Unfortunately, we won't be able to attend, but we're wishing you both a beautiful day.' Send a card or small gift if you're close to the couple. Never mention the reason unless it's a serious emergency.",
+        "tags": ["invitations", "weddings", "etiquette"]
+    },
+    "introducing_people": {
+        "situation": "Introducing two people who haven't met",
+        "advice": "Start with the person of higher rank/age, then introduce the other person to them. Use full names and add context: 'Sarah, I'd like you to meet my colleague Tom Chen. Tom, this is Sarah Williams, she works in marketing at XYZ Company.' Give each person something to talk about by mentioning a shared interest if possible.",
+        "tags": ["introductions", "social", "networking"]
+    },
+    "thank_you_notes": {
+        "situation": "When to send thank you notes",
+        "advice": "Send within 2-3 days for gifts, within a week for dinner parties or interviews. Handwritten is best for personal occasions. Include: 1) Thanks for the specific gift/gesture, 2) How you'll use it or what it meant, 3) Personal comment. Example: 'Dear Aunt Mary, Thank you for the beautiful sweater. The color is perfect, and it's already become my go-to for chilly mornings. I hope we can catch up soon.'",
+        "tags": ["thank you", "gratitude", "correspondence"]
+    },
+    "dinner_party_guest": {
+        "situation": "What to bring as a dinner party guest",
+        "advice": "Bring a host/hostess gift, not something for the meal (they've planned it). Good choices: wine, flowers in a vase (not requiring immediate attention), quality chocolates, candles, or coffee table book. Arrive 5-10 minutes late (not early!), never more than 15 minutes late. Send a thank you note or text within 24 hours.",
+        "tags": ["dinner party", "hosting", "gifts"]
+    },
+    "table_manners": {
+        "situation": "Basic table manners for formal dining",
+        "advice": "Silverware: work from outside in. Place napkin on lap immediately. Don't start eating until host begins or signals. Cut one bite at a time. Keep elbows off table while eating. Pass items clockwise. If you drop utensils, ask for new ones rather than retrieving. When finished, place knife and fork at 4 o'clock position on plate. Don't reach across table - ask someone to pass items.",
+        "tags": ["dining", "table manners", "formal"]
+    },
+    "apology": {
+        "situation": "How to properly apologize",
+        "advice": "A proper apology has three parts: 1) Acknowledgment - 'I was wrong to...' 2) Remorse - 'I'm sorry that my actions hurt you' 3) Repair - 'How can I make this right?' Avoid 'but' statements or excuses. Don't say 'I'm sorry you feel that way' - that's not an apology. Take full responsibility. If appropriate, explain what you'll do differently going forward.",
+        "tags": ["apology", "conflict", "relationships"]
+    },
+    "phone_etiquette": {
+        "situation": "Phone etiquette in public and professional settings",
+        "advice": "Keep your phone on silent in meetings, restaurants, theaters, libraries. If you must take a call in public, step away to a private area and speak quietly. Don't use speakerphone in public. For professional calls: answer with your name, speak clearly, return calls within 24 hours. Texting: don't text during in-person conversations, respond within a reasonable time, use proper grammar in professional contexts.",
+        "tags": ["phone", "technology", "professional"]
+    },
+    "tipping": {
+        "situation": "Tipping guidelines",
+        "advice": "Restaurants: 15-20% of pre-tax bill (20% for excellent service). Bars: $1-2 per drink. Food delivery: 15-20%. Taxis/rideshares: 15-20%. Hair salon: 15-20%. Hotel: $2-5 per bag for bellhop, $2-5 per night for housekeeping. Coffee shop tip jar: $0.50-1 for complex drinks. For poor service, still tip 10-15% and speak with manager separately.",
+        "tags": ["tipping", "service", "money"]
+    },
+    "condolences": {
+        "situation": "Offering condolences",
+        "advice": "Keep it simple and sincere. Good phrases: 'I'm so sorry for your loss,' 'My thoughts are with you,' '[Name] will be deeply missed.' Share a specific positive memory if appropriate. Avoid: 'They're in a better place,' 'Everything happens for a reason,' 'I know how you feel.' Offer specific help: 'Can I bring dinner Thursday?' rather than 'Let me know if you need anything.' Follow up in a few weeks when initial support fades.",
+        "tags": ["condolences", "grief", "support"]
+    }
+}
+
+
+class EtiquetteStore:
+    def __init__(self):
+        self.path = ETIQUETTE_FILE
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        self.etiquette = self._load()
+        
+        if not self.etiquette:
+            self.etiquette = STARTER_ETIQUETTE.copy()
+            self.save()
+
+    def _load(self) -> dict:
+        if self.path.exists():
+            try:
+                return json.load(open(self.path, "r", encoding="utf-8"))
+            except Exception:
+                return {}
+        return {}
+
+    def save(self):
+        with open(self.path, "w", encoding="utf-8") as f:
+            json.dump(self.etiquette, f, indent=2, ensure_ascii=False)
+
+    def search(self, query: str) -> List[Dict]:
+        """Search etiquette advice by keywords."""
+        query_lower = query.lower()
+        results = []
+        
+        for eid, item in self.etiquette.items():
+            situation = item.get("situation", "").lower()
+            advice = item.get("advice", "").lower()
+            tags = [t.lower() for t in item.get("tags", [])]
+            
+            if (query_lower in situation or 
+                query_lower in advice or
+                any(query_lower in tag for tag in tags)):
+                results.append({"id": eid, **item})
+        
+        return results
+
+    def format_advice(self, item: dict) -> str:
+        """Format etiquette advice for display."""
+        return f"📋 {item['situation']}\n\n💡 {item['advice']}"

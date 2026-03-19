@@ -1,0 +1,18 @@
+# RAG 2.0 Memory System - Requirements
+
+# Core dependencies for RAG memory system
+chromadb>=0.4.22
+sentence-transformers>=2.2.2
+
+# Embedding and vector operations
+numpy>=1.24.0
+torch>=2.0.0
+
+# Optional: Alternative embedding providers
+# ollama  # If you want to use Ollama for embeddings instead
+
+# Optional: For Llama model integration
+# llama-cpp-python>=0.2.0
+
+# Already in main requirements.txt (included for reference)
+# transformers>=4.30.0

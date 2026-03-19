@@ -1,0 +1,18 @@
+pyttsx3
+numpy
+torch
+transformers
+sentence-transformers
+faiss-cpu
+python-dotenv
+psutil
+pynput
+pywin32
+PySide6
+## optional extras (commented)
+# vosk
+# pyaudio
+# face-recognition
+# opencv-python
+# flask
+# pytesseract

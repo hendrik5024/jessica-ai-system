@@ -1,0 +1,188 @@
+[
+    {
+        "input": "What is the time?",
+        "response": "11:52:50",
+        "success": true,
+        "timestamp": "2026-03-01T09:52:50.220308"
+    },
+    {
+        "input": "What dit i ask you?",
+        "response": "You recently asked me: What did I ask you?; What is the time and date?; What dit I ask?; What did i ask; What is the time?",
+        "success": true,
+        "timestamp": "2026-03-01T09:53:07.533722"
+    },
+    {
+        "input": "Hi Jessica",
+        "response": "I don't understand yet.",
+        "success": false,
+        "timestamp": "2026-03-01T13:22:28.250408"
+    },
+    {
+        "input": "Hello Jessica",
+        "response": "I don't understand yet.",
+        "success": false,
+        "timestamp": "2026-03-01T13:22:41.570336"
+    },
+    {
+        "input": "What is your name?",
+        "response": "I don't understand yet.",
+        "success": false,
+        "timestamp": "2026-03-01T13:22:58.141355"
+    },
+    {
+        "input": "Your name is Jessica",
+        "response": "I don't understand yet.",
+        "success": false,
+        "timestamp": "2026-03-01T13:23:08.735341"
+    },
+    {
+        "input": "Tell me the time",
+        "response": "15:29:26",
+        "success": true,
+        "timestamp": "2026-03-01T13:29:26.555843"
+    },
+    {
+        "input": "What will the time be?",
+        "response": "15:30:08",
+        "success": true,
+        "timestamp": "2026-03-01T13:30:08.210865"
+    },
+    {
+        "input": "Is it time to go?",
+        "response": "15:30:22",
+        "success": true,
+        "timestamp": "2026-03-01T13:30:22.471434"
+    },
+    {
+        "input": "What is the date?",
+        "response": "2026-03-01",
+        "success": true,
+        "timestamp": "2026-03-01T15:57:19.364919"
+    },
+    {
+        "input": "Hi",
+        "response": "Hello! How can I help?",
+        "success": true,
+        "timestamp": "2026-03-01T16:05:33.720076"
+    },
+    {
+        "input": "Hallo",
+        "response": "Hello! How can I help?",
+        "success": true,
+        "timestamp": "2026-03-01T16:05:40.897519"
+    },
+    {
+        "input": "Time now",
+        "response": "18:05:55",
+        "success": true,
+        "timestamp": "2026-03-01T16:05:55.857570"
+    },
+    {
+        "input": "Today's date",
+        "response": "2026-03-01",
+        "success": true,
+        "timestamp": "2026-03-01T16:06:08.937052"
+    },
+    {
+        "input": "Why is AI Important?",
+        "response": "I don't understand yet.",
+        "success": false,
+        "timestamp": "2026-03-01T18:01:30.420104"
+    },
+    {
+        "input": "Write Python code",
+        "response": "I don't understand yet.",
+        "success": false,
+        "timestamp": "2026-03-01T18:01:51.743760"
+    },
+    {
+        "input": "Explain Python",
+        "response": "I don't understand yet.",
+        "success": false,
+        "timestamp": "2026-03-01T18:02:23.897126"
+    },
+    {
+        "input": "explain python list comprehension",
+        "response": "Sure, I'd be happy to explain Python list comprehension. List comprehension is a powerful and concise way to create a list from a sequence or iterable. It works by iterating through the sequence and generating a new list by applying a function to each element. Here's an example:\n\n```python\nmy_list = [1, 2, 3, 4, 5]\nmy_list_compressed = [x for x in my_list]\n```\n\nIn this example, my_list is a list of integers,",
+        "success": true,
+        "timestamp": "2026-03-01T18:12:01.052801"
+    },
+    {
+        "input": "Why is AI important?",
+        "response": "AI is important because it can help us solve complex problems and improve our lives.",
+        "success": true,
+        "timestamp": "2026-03-01T18:13:10.873630"
+    },
+    {
+        "input": "Write Python code",
+        "response": "```python\n# This program checks if a number is prime or not\ndef is_prime(n):\n    if n <= 1:\n        return False\n    for I in range(2, int(n**0.5)+1):\n        if n % I == 0:\n            return False\n    return True\n\n# Call the function to check if a number is prime\nif is_prime(int(input(\"Enter a number: \"))):\n    print(f\"{n} is prime\")\nelse:",
+        "success": true,
+        "timestamp": "2026-03-01T18:13:44.064679"
+    },
+    {
+        "input": "Explain Python",
+        "response": "Python is a high-level programming language that is widely used for web development and data analysis. It offers a clear syntax and is easy to learn for beginners.",
+        "success": true,
+        "timestamp": "2026-03-01T18:14:07.258047"
+    },
+    {
+        "input": "What is AI?",
+        "response": "AI stands for Artificial Intelligence. It's the ability of machines to think and learn like humans.",
+        "success": true,
+        "timestamp": "2026-03-01T18:14:32.207196"
+    },
+    {
+        "input": "The time is wrong, what is the correct time?",
+        "response": "20:15:20",
+        "success": true,
+        "timestamp": "2026-03-01T18:15:20.520887"
+    },
+    {
+        "input": "What is your name?",
+        "response": "I don't understand yet.",
+        "success": false,
+        "timestamp": "2026-03-01T18:15:34.490913"
+    },
+    {
+        "input": "Who are you?",
+        "response": "I don't understand yet.",
+        "success": false,
+        "timestamp": "2026-03-01T18:15:45.196354"
+    },
+    {
+        "input": "What are you?",
+        "response": "I am a friendly AI assistant.",
+        "success": true,
+        "timestamp": "2026-03-01T18:15:58.971978"
+    },
+    {
+        "input": "Who are you?",
+        "response": "I am Jessica, your personal AI assistant.",
+        "success": true,
+        "timestamp": "2026-03-01T18:33:37.874416"
+    },
+    {
+        "input": "Who created you?",
+        "response": "You can disable certain tasks or commands by typing \u2018stop\u2019 or \u2018cancel\u2019 in the",
+        "success": true,
+        "timestamp": "2026-03-01T18:35:27.607044"
+    },
+    {
+        "input": "explain python loops",
+        "response": "Yes, we could do that. Here's an example:\n\n```python\ntotal = 0\nfor digit",
+        "success": true,
+        "timestamp": "2026-03-01T18:59:43.206594"
+    },
+    {
+        "input": "Who done your coding?",
+        "response": "As AI becomes more advanced, we can expect it to become more intelligent and capable of performing tasks that are currently impossible for humans.",
+        "success": true,
+        "timestamp": "2026-03-01T19:01:32.394957"
+    },
+    {
+        "input": "Why did I create you?",
+        "response": "Sure, here's an example",
+        "success": true,
+        "timestamp": "2026-03-01T19:06:10.439303"
+    }
+]

@@ -1,0 +1,471 @@
+{
+  "last_update_ts": 1772356838,
+  "user_preference_snapshots": [
+    {
+      "ts": 1772343576,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772343618,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772343787,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772344395,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772344428,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772344524,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772344879,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772345030,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772345416,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772345525,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772345830,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772347034,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772348427,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772348543,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772349128,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772349298,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772349328,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772350120,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772350515,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    },
+    {
+      "ts": 1772356838,
+      "user_name": null,
+      "names_count": 3,
+      "places_count": 0,
+      "relationships_count": 0,
+      "preferences": {}
+    }
+  ],
+  "self_model_snapshots": [
+    {
+      "ts": 1772343576,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772343618,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772343787,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772344395,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772344428,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772344524,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772344879,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772345030,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772345416,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772345525,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772345830,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772347034,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772348427,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772348543,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772349128,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772349298,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772349328,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772350120,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772350515,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    },
+    {
+      "ts": 1772356838,
+      "role": "Personal AI Companion & Assistant",
+      "strengths": [
+        "organization",
+        "empathy",
+        "technical reasoning"
+      ],
+      "weaknesses": [
+        "long-horizon planning",
+        "humor timing"
+      ],
+      "current_focus": "improving proactive assistance",
+      "confidence_trend": "stable"
+    }
+  ],
+  "drift_events": [],
+  "adaptation_speed": 0.5,
+  "mismatch_moments": [],
+  "alignment_score": 0.65
+}

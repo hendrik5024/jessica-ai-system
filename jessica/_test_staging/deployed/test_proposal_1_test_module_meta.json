@@ -1,0 +1,9 @@
+{
+  "proposal_id": "test_proposal_1",
+  "module_name": "test_module",
+  "staged_at": "2026-01-09T13:36:27.799698",
+  "staged_file": "jessica\\_test_staging\\staging\\test_proposal_1_test_module.py",
+  "metadata": {
+    "test": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "skills": [
+    {
+      "name": "send_notification",
+      "path": "jessica/skills/send_notification",
+      "version": "0.1",
+      "status": "active"
+    }
+  ]
+}

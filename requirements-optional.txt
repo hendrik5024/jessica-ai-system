@@ -1,0 +1,53 @@
+# Optional feature dependencies used by specific Jessica modules
+# Install only what you need for the features you enable.
+
+# Speech and audio
+vosk
+pyaudio
+pocketsphinx
+sounddevice
+soundfile
+whisper
+piper
+TTS
+
+# Vision and OCR
+opencv-python
+face-recognition
+pytesseract
+Pillow
+
+# Data and office tools
+pandas
+openpyxl
+PyPDF2
+python-docx
+
+# Browser/automation and input
+pyautogui
+keyboard
+mouse
+bs4
+
+# ML and advanced generation
+chromadb
+diffusers
+evaluate
+peft
+sentencepiece
+
+# CAD and geometry
+cadquery
+trimesh
+
+# Misc integrations
+openai
+instructor
+docstring-parser
+tabulate
+matplotlib
+seaborn
+wget
+github3.py
+GitPython
+chess

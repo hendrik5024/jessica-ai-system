@@ -1,0 +1,12 @@
+{
+  "user_name": "Hendrik",
+  "assistant_name": "Jessica",
+  "personality": {
+    "tone": "supportive",
+    "concise": true
+  },
+  "preferences": {
+    "default_voice": "female",
+    "confirm_actions": true
+  }
+}

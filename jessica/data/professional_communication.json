@@ -1,0 +1,175 @@
+{
+  "feedback_frameworks": [
+    {
+      "framework": "Feedback Sandwich",
+      "description": "Deliver criticism by sandwiching it between two positives",
+      "structure": [
+        "Start with genuine positive feedback",
+        "Deliver the constructive criticism",
+        "End with encouragement or another positive"
+      ],
+      "example": "I really appreciate how creative your proposal was—the visuals were excellent. I think we need to work on the budget section to make it more realistic. Overall, you've made great progress, and with these tweaks, this will be a strong pitch.",
+      "when_to_use": "Giving feedback to someone sensitive to criticism, performance reviews, coaching",
+      "caution": "Don't be insincere—the positives must be genuine, or it feels manipulative",
+      "alternative": "SBI (Situation-Behavior-Impact): State the situation, describe the behavior, explain the impact without fluff"
+    },
+    {
+      "framework": "SBI (Situation-Behavior-Impact)",
+      "description": "Give feedback by describing what happened, what was done, and the impact—no judgments",
+      "structure": [
+        "Situation: When and where did it happen?",
+        "Behavior: What specific action did the person take?",
+        "Impact: What was the result or consequence?"
+      ],
+      "example": "In yesterday's meeting (situation), when you interrupted Sarah twice (behavior), it made her feel like her input wasn't valued, and we missed her key point (impact).",
+      "why_it_works": "Focuses on observable facts, not personality or intent. Reduces defensiveness.",
+      "when_to_use": "Correcting specific behaviors, when you need to be direct without sounding harsh"
+    }
+  ],
+  "de_escalation_language": {
+    "principle": "Use 'I' statements instead of 'You' accusations",
+    "why_it_works": "'You' statements sound like blame. 'I' statements express your feelings without attacking.",
+    "formulas": [
+      {
+        "formula": "I feel [emotion] when [behavior] because [impact]",
+        "examples": [
+          "I feel frustrated when meetings start late because it throws off my schedule.",
+          "I feel overwhelmed when I receive last-minute requests because I can't plan my day.",
+          "I feel undervalued when my ideas are dismissed because I work hard on them."
+        ]
+      },
+      {
+        "formula": "I need [what you need] because [reason]",
+        "examples": [
+          "I need advance notice for meetings because I have other commitments.",
+          "I need quiet time in the mornings because that's when I'm most productive.",
+          "I need clearer expectations because I want to meet your standards."
+        ]
+      },
+      {
+        "formula": "When [situation], I [impact]. Can we [solution]?",
+        "examples": [
+          "When deadlines change suddenly, I struggle to deliver quality work. Can we have a 48-hour notice policy?",
+          "When I'm cc'd on every email, I miss the important ones. Can we limit cc's to need-to-know?",
+          "When I don't get feedback, I feel uncertain. Can we schedule regular check-ins?"
+        ]
+      }
+    ],
+    "avoid": [
+      "You always... / You never... (absolute statements)",
+      "You make me feel... (no one can 'make' you feel something—you're responsible for your emotions)",
+      "You should... (sounds preachy and prescriptive)"
+    ]
+  },
+  "email_templates": [
+    {
+      "scenario": "Polite but firm: Coworker missing deadlines",
+      "template": "Hi [Name],\n\nI wanted to touch base about the [project] deadlines. I've noticed the last [X] deliverables were delayed, which has created challenges for the rest of the team who depend on your work to move forward.\n\nI understand things can get hectic, and I'd like to understand if there's anything blocking you so we can problem-solve together. Going forward, could we agree on:\n\n• [Specific expectation, e.g., 24-hour notice if a deadline will be missed]\n• [Specific support, e.g., weekly check-ins to catch issues early]\n\nI value your work and want to make sure we're set up for success. Let me know your thoughts.\n\nBest,\n[Your Name]",
+      "key_elements": [
+        "Acknowledge the problem factually",
+        "Assume positive intent (ask if there's a blocker)",
+        "Propose specific solutions",
+        "End collaboratively"
+      ]
+    },
+    {
+      "scenario": "Setting boundaries: Too many requests",
+      "template": "Hi [Name],\n\nI appreciate you thinking of me for [task]. However, I'm currently at capacity with [project A] and [project B], and taking this on would compromise the quality of my existing commitments.\n\nI can take this on after [date], or I'd be happy to [alternative: recommend someone else, offer to help scope it for later, etc.]. Let me know what works best.\n\nThanks for understanding,\n[Your Name]",
+      "key_elements": [
+        "Say no clearly but politely",
+        "Explain why (capacity, not willingness)",
+        "Offer alternative",
+        "No apology necessary—you're protecting your work quality"
+      ]
+    },
+    {
+      "scenario": "Requesting feedback or clarification",
+      "template": "Hi [Name],\n\nI want to make sure I'm meeting your expectations on [project]. Could you provide feedback on [specific aspect]?\n\nSpecifically, I'd love to know:\n• [Question 1]\n• [Question 2]\n\nThis will help me [benefit, e.g., adjust my approach, prioritize correctly, deliver what you need].\n\nThanks for your time!\n[Your Name]",
+      "key_elements": [
+        "Ask specific questions (not just 'any feedback?')",
+        "Show you want to improve",
+        "Make it easy for them to respond"
+      ]
+    },
+    {
+      "scenario": "Apologizing professionally",
+      "template": "Hi [Name],\n\nI apologize for [specific action]. That was my mistake, and I understand it caused [impact on them].\n\nI've already [what you've done to fix it], and going forward, I'll [specific change to prevent recurrence].\n\nThank you for your patience.\n\nBest,\n[Your Name]",
+      "key_elements": [
+        "Acknowledge what you did wrong (be specific)",
+        "Recognize the impact",
+        "Show you've fixed it",
+        "Commit to change",
+        "No excuses or 'but'"
+      ]
+    },
+    {
+      "scenario": "Saying no to a meeting",
+      "template": "Hi [Name],\n\nThanks for the invite to [meeting]. Unfortunately, I won't be able to attend as I have [conflict / other priority].\n\nCould you [send notes after / loop me in via email / reschedule]? I'm happy to [alternative, e.g., provide input async, meet one-on-one later].\n\nThanks!\n[Your Name]",
+      "key_elements": [
+        "Decline clearly",
+        "Offer alternative way to participate",
+        "Keep it brief—no need to over-explain"
+      ]
+    }
+  ],
+  "difficult_conversations": [
+    {
+      "situation": "Asking for a raise",
+      "approach": "Lead with value, not need. Use market data.",
+      "script": "I'd like to discuss my compensation. Over the past [time period], I've [specific achievements with measurable impact]. Based on market research for my role and experience level, the typical range is [salary range]. I'm currently at [your salary], and I'd like to discuss an adjustment to [target salary] to reflect my contributions and market rate. Can we talk about this?",
+      "tips": [
+        "Do research (Glassdoor, Payscale)",
+        "Document accomplishments",
+        "Propose a number (don't ask 'What can you offer?')",
+        "Time it right (after a win, during review cycle)"
+      ]
+    },
+    {
+      "situation": "Declining a project diplomatically",
+      "approach": "Explain constraints, suggest alternatives",
+      "script": "I appreciate being considered for [project]. However, taking this on right now would impact [current priority], which I know is critical. Would it make sense to [push back the timeline / reassign part of it / revisit after X]? I want to deliver quality work, and I don't want to over-commit.",
+      "tips": [
+        "Show you care about quality",
+        "Offer solutions, not just 'no'",
+        "Reference your current workload"
+      ]
+    },
+    {
+      "situation": "Addressing a peer's unprofessional behavior",
+      "approach": "Private conversation, focus on behavior not character",
+      "script": "Hey [name], can I give you some feedback? In today's meeting, when you [specific behavior], it came across as [how it seemed]. I don't think that was your intent, but I wanted to let you know how it landed. In the future, could you [alternative behavior]?",
+      "tips": [
+        "Do it privately, not in public",
+        "Assume good intent",
+        "Be specific about behavior",
+        "Suggest alternative"
+      ]
+    }
+  ],
+  "professional_phrases": {
+    "Instead of": {
+      "Sorry for bothering you": "Thanks for your time",
+      "I just wanted to...": "I wanted to...",
+      "Does that make sense?": "What questions do you have?",
+      "I think maybe we could...": "I recommend we...",
+      "Sorry for the late reply": "Thanks for your patience",
+      "No problem": "Happy to help / You're welcome"
+    },
+    "Power phrases": [
+      "I appreciate your perspective. Here's mine...",
+      "Let me make sure I understand...",
+      "I'd like to propose...",
+      "Based on [data/evidence]...",
+      "To clarify...",
+      "Here's what I recommend...",
+      "I'll follow up on [specific action] by [date]"
+    ]
+  },
+  "tips": [
+    "Write angry emails in drafts, then delete them. Never send in the heat of the moment.",
+    "If you wouldn't say it to their face, don't write it in an email—tone is hard to convey.",
+    "End emails with a clear call to action: 'Please confirm by Friday' not 'Let me know when you can'",
+    "Use 'we' for collaboration, 'I' for accountability: 'We can solve this' vs 'I made a mistake'",
+    "Before hitting send, ask: Is this kind? Is this true? Is this necessary?"
+  ]
+}

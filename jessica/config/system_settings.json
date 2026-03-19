@@ -1,0 +1,12 @@
+{
+  "execution_mode": "autonomous",
+  "self_improvement": "approval",
+  "capability_generation": "suggest",
+  "workspace_behavior": "auto_open_and_build",
+
+  "models": {
+    "reasoning_model": "phi-3-mini",
+    "coding_model": "codellama-13b",
+    "chat_model": "capybara-hermes"
+  }
+}

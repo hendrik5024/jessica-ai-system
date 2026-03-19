@@ -1,0 +1,29 @@
+{
+  "versions": {
+    "greeting_skill": [
+      {
+        "module_name": "greeting_skill",
+        "version_id": "greeting_skill_20260109_133627",
+        "reason": "Initial version",
+        "created_at": "2026-01-09T13:36:27.873170",
+        "code_hash": "bc3e268802eda4dfd18db94b757e7dc5a230e60766bbd5e1f6332acdf5a38688",
+        "metadata": {},
+        "tags": [
+          {
+            "name": "stable",
+            "description": "Stable release",
+            "created_at": "2026-01-09T13:36:27.907087"
+          }
+        ]
+      },
+      {
+        "module_name": "greeting_skill",
+        "version_id": "greeting_skill_20260109_133627",
+        "reason": "Improved greeting",
+        "created_at": "2026-01-09T13:36:27.901545",
+        "code_hash": "1df3c885047d94b713f9a94f46b5eaf7f6cc6d4f58344b70830c4bfad18fab3e",
+        "metadata": {}
+      }
+    ]
+  }
+}

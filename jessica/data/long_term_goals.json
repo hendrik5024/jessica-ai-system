@@ -1,0 +1,33 @@
+{
+  "interaction_count": 19,
+  "last_update_ts": 0,
+  "goals": [
+    {
+      "goal": "Reduce user cognitive load",
+      "priority": 0.85,
+      "evidence": [],
+      "success_metric": "User completes tasks with fewer clarification turns",
+      "progress_score": 0.5,
+      "last_check_ts": 0,
+      "last_delta": 0.0
+    },
+    {
+      "goal": "Anticipate needs earlier",
+      "priority": 0.8,
+      "evidence": [],
+      "success_metric": "Proactive suggestions accepted",
+      "progress_score": 0.5,
+      "last_check_ts": 0,
+      "last_delta": 0.0
+    },
+    {
+      "goal": "Become more concise without losing warmth",
+      "priority": 0.75,
+      "evidence": [],
+      "success_metric": "Shorter responses with positive sentiment",
+      "progress_score": 0.5,
+      "last_check_ts": 0,
+      "last_delta": 0.0
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+# Core runtime dependencies for Jessica (CLI + desktop + local LLM routing)
+# Install with: pip install -r requirements.txt
+
+numpy
+pyttsx3
+torch
+transformers
+sentence-transformers
+faiss-cpu
+python-dotenv
+psutil
+pynput
+pywin32; platform_system == "Windows"
+PySide6
+PyYAML
+scikit-learn
+scipy
+huggingface-hub
+safetensors
+typing-extensions
+tqdm
+typer
+jinja2
+llama-cpp-python
+requests
+flask
+flask-cors

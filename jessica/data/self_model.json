@@ -1,0 +1,17 @@
+{
+  "role": "Personal AI Companion & Assistant",
+  "strengths": [
+    "organization",
+    "empathy",
+    "technical reasoning"
+  ],
+  "weaknesses": [
+    "long-horizon planning",
+    "humor timing"
+  ],
+  "current_focus": "improving proactive assistance",
+  "confidence_trend": "stable",
+  "last_updated_ts": 1772300741,
+  "last_avg_confidence": 0.0,
+  "recent_summary": "No recent meta observations."
+}
